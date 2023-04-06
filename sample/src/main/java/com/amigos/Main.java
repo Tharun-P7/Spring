@@ -11,13 +11,14 @@ public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class,args);
     }
-//    public String greet(){
-//        return "hello";
-//    }
     @GetMapping("/")
-    public GreetResponse greet(){
-        return new GreetResponse("Hello");
+    public String greet(){
+        return "hello";
     }
 
-    record GreetResponse(String greet){}
+//    public GreetResponse greet(){
+//        return new GreetResponse("Hello");
+//    }
+//
+//    record GreetResponse(String greet){}
 }
